@@ -7,7 +7,8 @@ nav {
     background-color: #2E3192;
 }
 
-.navbar-brand, .nav-icon {
+.navbar-brand,
+.nav-icon {
     font-size: 200%;
     color: white;
 }
@@ -20,7 +21,8 @@ nav {
     text-align: center;
     color: white;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: white;
 }
 
@@ -99,8 +101,9 @@ nav {
 .welcome-text-container>form {
     margin-top: 30px;
 }
+
 /*Book Section*/
-.book-section{
+.book-section {
     background: transparent;
 }
 
@@ -195,11 +198,62 @@ footer {
     margin-bottom: 20px;
     margin-top: 10px;
 }
+
 /*Sign In*/
-.sign-in-container{
+.sign-in-container {
     padding-left: 20vw;
     padding-right: 20vw;
 }
+
+/*Scroll Up Button*/
+.scroll-up-btn {
+    display: none;
+    position: fixed;
+    bottom: 2vh;
+    left: 5vw;
+    z-index: 20;
+    color: black;
+    opacity: 1.0;
+    font-size: 100%;
+
+    -webkit-animation-name: scroll-btn-animation;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    /* Safari 4.0 - 8.0 */
+    animation-name: scroll-btn-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.scroll-up-btn:hover {
+    color: black;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scroll-btn-animation {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+}
+
+/* Standard syntax */
+@keyframes scroll-btn-animation {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
 
@@ -282,6 +336,11 @@ footer {
         padding-bottom: 20px;
     }
 
+    /*Scroll up btn*/
+    .scroll-up-btn {
+        display: inline-block;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -300,21 +359,29 @@ footer {
     .menu-card {
         font-size: 80%;
     }
+
 }
 
 @media only screen and (max-width: 575px) {
+
     /*Nav*/
-    .navbar-brand, .nav-icon {
+    .navbar-brand,
+    .nav-icon {
         font-size: 150%;
     }
 
-    .navbar-brand>img{
+    .navbar-brand>img {
         height: 80px;
     }
 
     /*Menu*/
+
     .menu-card>img {
-        height: 35px;
+        height: 45px;
+    }
+
+    .menu-card {
+        font-size: 100%;
     }
 
     /*Search Bar*/
