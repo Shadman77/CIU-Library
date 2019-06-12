@@ -7,8 +7,9 @@ nav {
     background-color: #2E3192;
 }
 
-.navbar-brand {
+.navbar-brand, .nav-icon {
     font-size: 200%;
+    color: white;
 }
 
 .nav-item {
@@ -17,12 +18,12 @@ nav {
 
 .nav-link {
     text-align: center;
-}
-
-.nav-icon {
-    font-size: 200%;
     color: white;
 }
+.nav-link:hover{
+    color: white;
+}
+
 
 /*Welcome Menu*/
 .menu-card {
@@ -302,6 +303,16 @@ footer {
 }
 
 @media only screen and (max-width: 575px) {
+    /*Nav*/
+    .navbar-brand, .nav-icon {
+        font-size: 150%;
+    }
+
+    .navbar-brand>img{
+        height: 80px;
+    }
+
+    /*Menu*/
     .menu-card>img {
         height: 35px;
     }
