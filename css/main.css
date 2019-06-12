@@ -28,7 +28,7 @@ nav {
 .menu-card {
     display: inline-block;
     background-color: #F2B121;
-    color: white;
+    color: #2E3192;
     text-align: center;
     padding: 10px;
     text-align: center;
@@ -48,7 +48,7 @@ nav {
 
 .menu-card:hover {
     text-decoration: none;
-    color: white;
+    color: #2E3192;
 }
 
 .parallax-window {
@@ -92,11 +92,15 @@ nav {
     background-color: #F2B121;
     border: 1px solid white;
     border-radius: 0px;
-    color: white;
+    color: #2E3192;
 }
 
 .welcome-text-container>form {
     margin-top: 30px;
+}
+/*Book Section*/
+.book-section{
+    background: transparent;
 }
 
 /*All Sections*/
