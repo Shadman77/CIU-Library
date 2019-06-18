@@ -1,7 +1,8 @@
 /*whole page*/
-body{
+body {
     overflow-y: hidden;
 }
+
 /*Navbar*/
 nav {
     z-index: 1;
@@ -245,8 +246,9 @@ footer {
     width: 100%;
     background-color: white;
 }
-.loading_ciu_image{
-    width: 35%;
+
+.loading_ciu_image {
+    width: 35vh;
     height: auto;
 }
 
@@ -518,5 +520,18 @@ footer {
     /*Search Bar*/
     .search-btn-text {
         display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+
+    /*Nav*/
+    .navbar-brand,
+    .nav-icon {
+        font-size: 130%;
+    }
+
+    .navbar-brand>img {
+        height: 70px;
     }
 }
