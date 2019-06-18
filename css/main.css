@@ -1,6 +1,6 @@
 /*whole page*/
 body{
-   /*overflow: hidden;*/
+    overflow-y: hidden;
 }
 /*Navbar*/
 nav {
@@ -238,7 +238,7 @@ footer {
 /*Loading Screen*/
 .loading_screen {
     z-index: 1000;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     height: 100%;
