@@ -29,7 +29,6 @@
 </head>
 
 <body>
-
     <!--Navbar-->
     <nav class="navbar navbar-expand-sm navbar-dark navbar-custom justify-content-between" id="top-nav">
         <header>
@@ -95,7 +94,8 @@
                         <!--Welcome Text-->
                         <h3>Welcome to the CIU library</h3>
                         <p class="lead">
-                            Offering all the latest books and study metarials for the CIU students and faculty members.
+                            Offering all the latest books and study metarials for the CIU students and faculty
+                            members.
                         </p>
                         <!--Welcome Text-->
 
@@ -1078,11 +1078,11 @@
                 <hr class="bg-light">
                 <form class="text-left">
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-lg-6">
                             <label for="firstName">First Name</label>
                             <input type="text" class="form-control" id="firstName" placeholder="Fisrt Name">
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-lg-6">
                             <label for="lastName">Last Name</label>
                             <input type="text" class="form-control" id="lastName" placeholder="Last Name">
                         </div>
@@ -1110,6 +1110,21 @@
     </a>
 
 
+    <!--Loading Screen-->
+    <div class="loading_screen d-flex flex-column justify-content-center align-items-center" id="loading_screen">
+        <div style="text-align: center;">
+            <img src="img/ciu_image.jpg" alt="ciu_image" class="loading_ciu_image">
+        </div>
+        <p class="lead">Loading</p>
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+
+
 
     <!--jQuery JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -1129,6 +1144,8 @@
     <script type="text/javascript" src="js/inertialSliderScript.js"></script>
     <!--Javascript for showing book sections-->
     <script type="text/javascript" src="js/showAll.js"></script>
+    <!--Loading Screen-->
+    <script type="text/javascript" src="js/loading_screen.js"></script>
 </body>
 
 </html>
